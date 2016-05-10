@@ -1,4 +1,4 @@
-package com.google.samples.quickstart.signin;
+package com.google.samples.quickstart.signin.login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +16,7 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
+import com.google.samples.quickstart.signin.R;
 
 /**
  * Demonstrates retrieving an ID token for the current Google user.

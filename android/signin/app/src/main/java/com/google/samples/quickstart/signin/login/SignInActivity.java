@@ -1,4 +1,4 @@
-package com.google.samples.quickstart.signin;
+package com.google.samples.quickstart.signin.login;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -13,19 +13,18 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.Scopes;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.OptionalPendingResult;
 import com.google.android.gms.common.api.ResultCallback;
-import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.common.api.Status;
+import com.google.samples.quickstart.signin.R;
 
 /**
  * Activity to demonstrate basic retrieval of the Google user's ID, email address, and basic
- * profile, which also adds a request dialog to access the user's Google Drive.
+ * profile.
  */
-public class SignInActivityWithDrive extends AppCompatActivity implements
+public class SignInActivity extends AppCompatActivity implements
         GoogleApiClient.OnConnectionFailedListener,
         View.OnClickListener {
 
@@ -53,7 +52,6 @@ public class SignInActivityWithDrive extends AppCompatActivity implements
         // Configure sign-in to request the user's ID, email address, and basic
         // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestScopes(new Scope(Scopes.DRIVE_APPFOLDER))
                 .requestEmail()
                 .build();
         // [END configure_signin]

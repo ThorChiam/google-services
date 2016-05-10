@@ -1,9 +1,11 @@
-package com.google.samples.quickstart.signin;
+package com.google.samples.quickstart.signin.login;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.webkit.WebView;
+
+import com.google.samples.quickstart.signin.R;
 
 public class FormActivity extends AppCompatActivity {
 
